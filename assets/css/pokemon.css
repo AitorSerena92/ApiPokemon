@@ -1,0 +1,218 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Reggae One";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  transform: scaleX(1.5);
+}
+
+.header img {
+  width: 50%;
+}
+
+#imgSearch {
+  width: 80%;
+}
+.imgheader {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  background-color: rgba(41, 50, 136, 0.493);
+  border-radius: 30px 2px 2px 30px;
+  border: 1px solid black;
+  justify-content: center;
+}
+.search label {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: auto;
+}
+
+.search input {
+  padding: 2px;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+}
+
+.searchAll{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+
+#AlltypesPokemons {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+#AlltypesPokemons select {
+  width: 100%;
+}
+
+#infoPokemonHidden{
+  text-transform: capitalize;
+  display: block;
+  background-color: rgba(41, 50, 136, 0.288);
+  border-radius: 2px 30px 30px 2px;
+  border: 1px solid black;
+}
+
+#contLoad {
+  padding: 10px;
+}
+#contLoad img {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  background-image: url("assets/img/giphy.gif");
+}
+
+#namepokemon section img {
+  margin: 5px;
+  width: 130px;
+
+  border-radius: 20px 0px 20px 0px;
+}
+#namepokemon section img:hover {
+  box-shadow: 1px 1px 3px 2px gold;
+  background-color: rgb(150, 145, 77);
+  border: 2px solid gold;
+}
+
+#movesPokemon {
+  text-transform: capitalize;
+  width: 200px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+#TeamOne,
+#TeamTwo {
+  display: flex;
+  padding: 3px;
+  width: auto;
+  margin-bottom: 20px;
+}
+#TeamOne:active,
+#TeamTwo:active {
+  box-shadow: 2px 3px 8px 2px rgba(0, 0, 0, 0.322);
+}
+
+
+
+/* MODIFICANDO CARD TYPES POKEMON */
+
+.card {
+  text-transform: capitalize;
+  border: 1px solid black !important;
+  border-radius: 20px !important;
+  background: rgba(197, 119, 30, 0.651) !important ;
+  box-shadow: 2px 2px 8px 2px rgba(56, 120, 180, 0.664);
+  margin: 10px;
+}
+
+.card-body {
+  border: 1px dashed rgb(93, 63, 63) !important;
+  margin: 10px;
+  border-radius: 20px !important;
+  
+}
+
+#resultType{
+  display: flex;
+  max-width: 1500px;
+  flex-wrap: wrap;
+}
+
+
+/* BACKGROUND POKEMON FOR TYPE */
+
+.bg-fire {
+  background-color: rgb(172, 67, 35) !important
+  ;
+  border: 3px solid black;
+}
+.bg-grass {
+  background-color: rgb(55, 148, 78) !important
+  ;
+  border: 3px solid black;
+}
+.bg-bug {
+  background-color: rgba(155, 211, 52, 0.89) !important
+  ;
+  border: 3px solid black;
+}
+.bg-normal {
+  background-color: rgba(176, 177, 132, 0.822) !important
+  ;
+  border: 3px solid black;
+}
+.bg-poison {
+  background-color: rgb(97, 33, 150) !important
+  ;
+  border: 3px solid black;
+}
+.bg-fighting {
+  background-color: rgb(204, 153, 44) !important
+  ;
+  border: 3px solid black;
+}
+.bg-rock {
+  background-color: rgb(95, 95, 95) !important
+  ;
+  border: 3px solid black;
+}
+.bg-psychic {
+  background-color: rgba(68, 0, 228, 0.788) !important
+  ;
+  border: 3px solid black;
+}
+.bg-electric {
+  background-color: rgba(194, 191, 24, 0.788) !important
+  ;
+  border: 3px solid black;
+}
+.bg-ground {
+  background-color: rgba(66, 46, 16, 0.788) !important
+  ;
+  border: 3px solid black;
+}
+.bg-water {
+  background-color: rgba(33, 194, 172, 0.788) !important
+  ;
+  border: 3px solid black;
+}
+
+/* SPINNER */
+
+.visible {
+  visibility: visible;
+  display: flex;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.bg-loader {
+  width: 200vh;
+  height: 200vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.322);
+  top: 0;
+  z-index:1 ;
+}

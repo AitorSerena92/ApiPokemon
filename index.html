@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./assets/img/pokemon-3418266_960_720.png" />
+    <link rel="stylesheet" href="./assets/css/pokemon.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    
+    <script src="./assets/js/axios.js"></script>
+
+    <title>API POKEMON</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="header">
+          <h2 class="text-black-80 bg-warning p-2">API POKEMON</h2>
+          <img src="assets/img/1200px-International_Pokémon_logo.svg.png" alt="">
+        </div>
+    </header>
+
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+             <div class="row search">
+
+                <div class="col-4 imgheader">
+                  <img id="imgSearch" src="assets/img/mr._mime-s.gif" alt="">
+                </div>
+
+                <div class="col-6 searchAll"> 
+                    <div class="row">
+                    
+                      <div class="col-md-12">
+                        <label for="search">
+                        <input type="text" class="btn-outline-secondary" placeholder="Insert Pokemon" id="youPokemon"> 
+                        </div>
+
+                        <div class="col-md-12" id="searh-pokemon">
+                            <label for="search">  
+                            <button class="btn-warning p-1" id="buscador" >Search Pokemon!</button>
+                        </div>
+                                  
+
+                                <!-- BUSCAR POR TIPOS DE POKEMON -->
+                          <div class="col-md-12" id="AlltypesPokemons">
+
+                            <select name="" id="typesPokemon" >
+        
+                              <option value="" selected disabled hidden>
+                                  Select Type Pokemon
+                              </option>
+
+                            </select>
+                          </div> 
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-7 pokemon">
+            <section name="" class="" id="infoPokemon" > </section>
+          
+            
+          </div>
+        </div>
+      </section>
+
+    <hr>
+
+      <section class="container-fluid">
+         <div class="row">
+            <div class="col-12">
+          <div id="resultType"> </div>
+
+  
+  <div id="loader" class="container-fluid bg-loader hidden">
+    <div class="row">
+      <div class="col-12">
+        <img src="./assets/img/loader.gif" alt="">
+      </div>
+    </div>
+  </div>
+  
+  <script src="assets/js/Pokemon.js"></script>
+    
+  </body>
+</html>
